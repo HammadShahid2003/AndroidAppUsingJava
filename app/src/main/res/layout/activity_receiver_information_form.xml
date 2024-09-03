@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor_grey"
+
+    tools:context=".ReceiverInformationForm">
+
+    <TextView
+        android:id="@+id/tvrctitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_background"
+        android:fontFamily="@font/alata"
+        android:lineHeight="40dp"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:text="RECEIVER\nDETAILS"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvrctitle"
+    android:id="@+id/tilEmail"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etREmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvrctitle"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/alata"
+            android:hint="Email"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilEmail"
+    android:id="@+id/tilfullname"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Full Name"
+            android:id="@+id/etRFullName"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alata"
+            android:layout_marginHorizontal="25dp"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilfullname"
+        android:id="@+id/tilContact"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Information"
+            android:id="@+id/etRContactInfo"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alata"
+            android:layout_marginHorizontal="25dp"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilContact"
+        android:id="@+id/tilCountry"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Country"
+            android:id="@+id/etRCountry"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alata"
+            android:layout_marginHorizontal="25dp"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilCountry"
+        android:id="@+id/tilAddress"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:id="@+id/etRAddress"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alata"
+            android:layout_marginHorizontal="25dp"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:backgroundTint="@color/RedColor"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="@font/alata"
+        android:layout_marginHorizontal="80dp"
+        android:layout_below="@id/tilAddress"
+        android:layout_marginTop="24dp"/>
+</RelativeLayout>
